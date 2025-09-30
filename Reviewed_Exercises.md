@@ -1,6 +1,6 @@
-   # H1 Sprint 1:
+   # Sprint 1:
 
-   `AI hunting for LinkedIn!`
+   ## `1. AI hunting for LinkedIn!`
 1. Tripple benefit. Icons at the end.
  
    ![Alt text](1Linked.png)
@@ -31,3 +31,5 @@
 10. Text structure, bolding. Text goes longer, then non human like icons starts to popup.
     
     ![Alt text](10Linked.png)
+
+  ## `2. Next exercise name here.`
