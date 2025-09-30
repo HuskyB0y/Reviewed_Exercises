@@ -1,2 +1,2 @@
 # Turing College - AI Literacy course
-# Reviewed exercises
+# Reviewed exercises -> Reviewed_Exercises.md
