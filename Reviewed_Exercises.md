@@ -7,6 +7,7 @@
     
 2. Long dash sign, icons instead of bulletpoints.
     ![Alt text](2Linked.png)
+    
 3. Concerned about this one.
    
     ![Alt text](3Linked.png)
