@@ -1,6 +1,9 @@
-   Sprint 1:
+   # H1 Sprint 1:
+
    `AI hunting for LinkedIn!`
 
-   Sprint 2:
-   Sprint 3:
-   Sprint 4:
+   # H1 Sprint 2:
+
+   # H1 Sprint 3:
+
+   # H1 Sprint 4:
