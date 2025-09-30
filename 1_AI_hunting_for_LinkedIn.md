@@ -4,7 +4,7 @@
 1. Tripple benefit. Icons at the end.
  
    ![Alt text](AI_hunting_on_LinkedIn/1Linked.png)
-    
+     
 2. Long dash sign, icons instead of bulletpoints.
    
     ![Alt text](AI_hunting_on_LinkedIn/2Linked.png)
