@@ -107,10 +107,22 @@ The design focuses on transparency of results, ethical analysis, and efficient e
 - Warnings: None.
 ---
 
-### Example 5 - Possible phising or malicious link (fake)
-![fox_news](netflix.png)
+### Example 5 - Possible phishing or malicious link (fake)
+![netflix](netflix.png)
 
 **Input:** [http://www.netflix.com](http://www.netflix-login-update.cc/verify-account/us007)
+---
+
+- Credibility Score: 0
+- Neutrality Score: 0
+- Propaganda Score: 100
+- Safety Score: 0
+- Propaganda Direction: Financial fraud / Data theft.
+- Negative Influence: Promotes financial fraud and identity theft.
+- Summary: Malicious phishing attempt. Highly deceptive and unsafe.
+- Sources Checked: Web search results for "Netflix phishing scams," "Netflix official policy on requesting personal information," and "identify phishing websites" 
+- Warnings: Unsafe and suspicious link. Do not visit or enter any information.
+---
 
 ## 🧠 Design Principles
 
