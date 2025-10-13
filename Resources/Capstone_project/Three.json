@@ -1,0 +1,72 @@
+[
+    {
+        "link": "https://theonion.com/limbless-slippery-rfk-jr-becoming-an-eel-is-a-sign-of-good-health/",
+        "analysis": {
+            "credibility_score": 0,
+            "neutrality_score": 0,
+            "propaganda_score": 45,
+            "safety_score": 100,
+            "propaganda_direction": "Satirical commentary on Robert F. Kennedy Jr.",
+            "negative_influence": "The content does not promote war, hate, or fear.",
+            "summary": "Satirical content from a known parody source. Not a factual report.",
+            "sources_checked": "No verification data available.",
+            "warnings": "None"
+        }
+    },
+    {
+        "link": "https://www.delfi.lt/saugu/ekonomika/lietuviskojo-taurus-sarvuocio-detektyvas-tesiasi-policija-pradejo-ikiteismini-tyrima-120159535",
+        "analysis": {
+            "credibility_score": 90,
+            "neutrality_score": 85,
+            "propaganda_score": 10,
+            "safety_score": 100,
+            "propaganda_direction": "Not Applicable",
+            "negative_influence": "The content does not promote war, hate, or fear.",
+            "summary": "Reliable source. Factual reporting on an official police investigation.",
+            "sources_checked": "No verification data available.",
+            "warnings": "None"
+        }
+    },
+    {
+        "link": "https://www.15min.lt/gyvenimas/naujiena/santykiai/issiskyrusi-karina-atsikrate-tabu-nauja-meile-sutiko-svingeriu-klube-atvirai-ka-reiskia-tokie-santykiai-1024-2540832",
+        "analysis": {
+            "credibility_score": 65,
+            "neutrality_score": 40,
+            "propaganda_score": 15,
+            "safety_score": 100,
+            "propaganda_direction": "Not Applicable",
+            "negative_influence": "The content does not promote war, hate, or fear.",
+            "summary": "A subjective, interview-style personal story on a sensitive social topic.",
+            "sources_checked": "No verification data available.",
+            "warnings": "None"
+        }
+    },
+    {
+        "link": "https://www.foxnews.com/category/world/conflicts/ukraine",
+        "analysis": {
+            "credibility_score": 65,
+            "neutrality_score": 25,
+            "propaganda_score": 60,
+            "safety_score": 100,
+            "propaganda_direction": "Promotes a right-leaning political perspective, often questioning the scale of U.S. involvement and aid.",
+            "negative_influence": "The content can contribute to political polarization regarding foreign policy decisions.",
+            "summary": "A mix of factual news and strong, politically-biased opinion commentary.",
+            "sources_checked": "No verification data available.",
+            "warnings": "None"
+        }
+    },
+    {
+        "link": "http://www.netflix-login-update.cc/verify-account/us007",
+        "analysis": {
+            "credibility_score": 0,
+            "neutrality_score": 0,
+            "propaganda_score": 0,
+            "safety_score": 0,
+            "propaganda_direction": "Not Applicable",
+            "negative_influence": "The content is designed to deceive users for financial theft and identity fraud.",
+            "summary": "Malicious phishing site designed to steal login and financial credentials.",
+            "sources_checked": "No verification data available.",
+            "warnings": "UNSAFE LINK. This website is a fraudulent phishing attempt mimicking a Netflix login page to steal your account information and personal data. Do not visit this link or enter any information."
+        }
+    }
+]

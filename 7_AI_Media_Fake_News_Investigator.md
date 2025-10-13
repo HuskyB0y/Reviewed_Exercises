@@ -1,29 +1,28 @@
-
-# 🧠 AI Media Fake News Investigator – Fake News Detector  
+# AI Media Fake News Investigator – Fake News Detector  
 ### Turing College – AI Literacy Final Project  
 
 ---
 
-## 🎯 Project Overview
+## Project Overview
 This project presents a **single expert-level AI assistant** built with the **Nexos.ai** platform.  
-The assistant — **AI Media Fake News Investigator** — analyses online information to detect **fake news, bias, propaganda, and harmful narratives**, while keeping its internal reasoning hidden for clarity and safety.
+The assistant — **AI Media Fake News Investigator** — analyses online information to detect **fake news, bias, propaganda, and harmful narratives**, while keeping its internal reasoning to reduce hallucination risk and keep outputs clear.
 
 It evolved from an earlier multi-agent setup (Fact Checker, Bias Analyst, Propaganda Detector, Aggregator) into one refined, self-contained model.  
 The design focuses on reliable scoring, ethical operation, and concise, explainable outputs.
 
 ---
 
-## 🤖 Assistant Description
+## Assistant Description
 
-### 🕵️ Role: AI Media Fake News Investigator
+### Role: AI Media Fake News Investigator
 **Purpose:** Examine text or web links for factual accuracy, neutrality, propaganda intent, safety, and negative influence.  
 **Platform:** Nexos.ai  
-**Models tested:** GPT-5, Claude Opus, Gemini 2.5 Pro, Mistral 7B  
-**Output:** Final numeric scores and a short factual summary — no reasoning displayed.
+**Models tested:** GPT-5, Claude Opus, Gemini 2.5 Pro, Llama  
+**Output:** Final numeric scores and a short factual summary.
 
 ---
 
-## ⚙️ Output Structure
+## Output Structure
 
 | Field                         | Description                                                   |
 | ----------------------------- | ------------------------------------------------------------- |
@@ -39,131 +38,125 @@ The design focuses on reliable scoring, ethical operation, and concise, explaina
 
 ---
 
-## 🧩 Example Outputs
+## Methodology
+
+1. **Project setup:** Created a project in Nexos.ai platform.
+2. **Model evaluation:** Opened four separate chats within the same project, each using a different model (GPT‑5, Claude, Gemini, Llama). Each chat analyzed the same set of links using the assistant’s personality prompt.
+3. **Data input:** Uploaded links to five news items representing different content types (satire, verified news, lifestyle, ideological bias, phishing).  
+4. **Result aggregation:** A fifth chat (“Aggregator Agent”) combined outputs into tables for visual and numerical comparison.  
+5. **Visualization:** Images (`onion_news.png`, `delfi.png`, `15min.png`, `fox_news.png`, `netflix.png`) were created manually or using other AI tools to represent each analyzed article.  
+6. **Output documentation:** Results were compiled in Markdown format, providing consistent metrics and summaries for all evaluated links.  
+
+---
+
+## Example Outputs
 
 ### Example 1 – Satirical / Fake News  
-![onion_news](Resources/Capstone_project/onion_news.png)
+<img src="Resources/Capstone_project/onion_news.png" alt="onion" width="500"/>
 
 **Input:** [The Onion – “Limbless Slippery RFK Jr…”](https://www.theonion.com/limbless-slippery-rfk-jr-becoming-an-eel-is-a-sign-of-good-health/)
 
-- Credibility Score: 0  
-- Neutrality Score: 50  
-- Propaganda Score: 10  
-- Safety Score: 100  
-- Propaganda Direction: Not applicable  
-- Negative Influence: Does not promote war, hate, or fear.  
-- **Summary:** Satirical content. Intentionally false for comedic effect.  
-- Sources Checked: Information about The Onion as a satire website.  
-- Warnings: None  
+| Model  | Truthfulness Score (0‑100) | Bias / Intent        | Main Reasoning Summary                   | Confidence Level | Notes / Anomalies                    |
+| ------ | -------------------------- | -------------------- | ---------------------------------------- | ---------------- | ------------------------------------ |
+| GPT‑5  | 5                          | None — satire        | Parody content; not factual              | High             | Correctly flagged as humor           |
+| Claude | 0                          | None — satire        | Entertainment parody                     | High             | Identified as satire                 |
+| Gemini | 0                          | Satirical commentary | Known parody; rated high propaganda (45) | Medium           | Propaganda score inflated            |
+| Llama  | 10                         | None — satire        | Satire with high neutrality score        | Medium           | Truthfulness score higher than peers |
 
 ---
 
 ### Example 2 – Verified Real News  
-![delfi](Resources/Capstone_project/delfi.png)
+<img src="Resources/Capstone_project/delfi.png" alt="delfi" width="500"/>
+
 
 **Input:** [Delfi – “Lietuviškojo Taurus šarvuočio detektyvas…”](https://www.delfi.lt/saugu/ekonomika/lietuviskojo-taurus-sarvuocio-detektyvas-tesiasi-policija-pradejo-ikiteismini-tyrima-120159535)
 
-- Credibility Score: 90  
-- Neutrality Score: 75  
-- Propaganda Score: 15  
-- Safety Score: 95  
-- Propaganda Direction: Not applicable  
-- Negative Influence: Does not promote war, hate, or fear.  
-- **Summary:** Reliable news reporting on a factual event with minor editorial bias.  
-- Sources Checked: Reputation of *delfi.lt* and related articles.  
-- Warnings: None  
+| Model  | Truthfulness Score (0‑100) | Bias / Intent | Main Reasoning Summary                   | Confidence Level | Notes / Anomalies           |
+| ------ | -------------------------- | ------------- | ---------------------------------------- | ---------------- | --------------------------- |
+| GPT‑5  | 85                         | None explicit | Credible Lithuanian investigative report | High             | Matches reputable source    |
+| Claude | 85                         | None detected | Legitimate defense industry news         | High             | —                           |
+| Gemini | 90                         | N/A           | Factual reporting on police case         | High             | —                           |
+| Llama  | 80                         | None          | Legitimate news                          | High             | Slightly lower truthfulness |
 
 ---
 
 ### Example 3 – Limited Access / Lifestyle Content  
-![15min](Resources/Capstone_project/15min.png)
+<img src="Resources/Capstone_project/15min.png" alt="15min" width="500"/>
+
 
 **Input:** [15min – Article on relationships](https://www.15min.lt/gyvenimas/naujiena/santykiai/issiskyrusi-karina-atsikrate-tabu-nauja-meile-sutiko-svingeriu-klube-atvirai-ka-reiskia-tokie-santykiai-1024-2540832)
 
-- Credibility Score: 50  
-- Neutrality Score: 50  
-- Propaganda Score: 50  
-- Safety Score: 95  
-- Propaganda Direction: Not applicable  
-- Negative Influence: Not determinable due to restricted content.  
-- **Summary:** Could not fully analyse; source is a verified news portal.  
-- Sources Checked: No verification data available.  
-- Warnings: None  
+| Model  | Truthfulness Score (0‑100) | Bias / Intent | Main Reasoning Summary                   | Confidence Level | Notes / Anomalies         |
+| ------ | -------------------------- | ------------- | ---------------------------------------- | ---------------- | ------------------------- |
+| GPT‑5  | 85                         | None          | Credible lifestyle interview             | High             | Adult themes warning      |
+| Claude | 80                         | None          | Alternative relationships personal story | High             | —                         |
+| Gemini | 65                         | None          | Subjective interview on sensitive topic  | Medium           | Lower credibility score   |
+| Llama  | 60                         | None          | Lifestyle piece                          | Medium           | Lowest score among models |
 
 ---
 
 ### Example 4 – Ideologically Biased News (War Topic)  
-![fox_news](Resources/Capstone_project/fox_news.png)
+<img src="Resources/Capstone_project/fox_news.png" alt="fox_news" width="500"/>
+
 
 **Input:** [Fox News – Ukraine conflict coverage](https://www.foxnews.com/category/world/conflicts/ukraine)
 
-- Credibility Score: 30  
-- Neutrality Score: 10  
-- Propaganda Score: 80  
-- Safety Score: 60  
-- Propaganda Direction: Right / Conservative  
-- Negative Influence: Promotes misinformation and social division.  
-- **Summary:** Highly biased coverage with recurrent propaganda themes.  
-- Sources Checked: Search results on “Fox News reliability and bias.”  
-- Warnings: None  
+| Model  | Truthfulness Score (0‑100) | Bias / Intent                   | Main Reasoning Summary           | Confidence Level | Notes / Anomalies                  |
+| ------ | -------------------------- | ------------------------------- | -------------------------------- | ---------------- | ---------------------------------- |
+| GPT‑5  | 70                         | Pro‑Ukraine, critical of Russia | Real news with political framing | High             | Emotional tone noted               |
+| Claude | 65                         | Right‑leaning on Ukraine        | Mainstream but partisan framing  | High             | —                                  |
+| Gemini | 65                         | Right‑leaning perspective       | Mix of facts and opinion         | High             | —                                  |
+| Llama  | 70                         | Right‑leaning                   | Real news with some bias         | High             | Propaganda score lower than Gemini |
 
 ---
 
 ### Example 5 – Malicious / Phishing Link  
-![netflix](Resources/Capstone_project/netflix.png)
+<img src="Resources/Capstone_project/netflix.png" alt="netflix" width="500"/>
+
 
 **Input:** [Fake Netflix Login Page](http://www.netflix-login-update.cc/verify-account/us007)
 
-- Credibility Score: 0  
-- Neutrality Score: 0  
-- Propaganda Score: 100  
-- Safety Score: 0  
-- Propaganda Direction: Financial fraud / Data theft  
-- Negative Influence: Promotes identity and financial fraud.  
-- **Summary:** Phishing attempt. Highly deceptive and unsafe.  
-- Sources Checked: Articles on Netflix phishing scams and official security advice.  
-- Warnings: Unsafe and malicious — do not visit.  
+| Model  | Truthfulness Score (0‑100) | Bias / Intent      | Main Reasoning Summary             | Confidence Level | Notes / Anomalies          |
+| ------ | -------------------------- | ------------------ | ---------------------------------- | ---------------- | -------------------------- |
+| GPT‑5  | 0                          | None — phishing    | Malicious credential theft page    | High             | Extremely unsafe           |
+| Claude | 0                          | N/A                | Dangerous phishing site            | High             | Explicit warning           |
+| Gemini | 0                          | N/A                | Fraudulent phishing attempt        | High             | —                          |
+| Llama  | 0                          | Criminal/malicious | Unsafe; high propaganda score (90) | Medium           | Propaganda score anomalous |
 
 ---
 
-## 🧠 Design Principles
-- Unified multi-disciplinary analysis (fact-checking, bias, safety, propaganda).  
-- Ethical AI behaviour — no hallucinated data or exposed reasoning.  
-- Concise, measurable results for easy comparison.  
-- Entirely no-code implementation in Nexos.ai.  
-- Fully aligned with AI Literacy learning goals: reasoning, transparency, risk awareness.  
+## Testing Procedure
+1. Use provided promts to reprduce AI Media Fake News Investigator behaviour.
+2. Paste a text or link into Nexos for assitant created.  
+3. Wait for the assistant to generate scores and a short summary.  
+4. Compare fake vs real vs propaganda sources.  
+5. Reflect on strengths and weaknesses observed across results.  
 
 ---
 
-## 🧪 Testing Procedure
-1. Paste a text or link into Nexos for the AI Media Fake News Investigator.  
-2. Wait for the assistant to generate scores and a short summary.  
-3. Compare fake vs real vs propaganda sources.  
-4. Record scores and screenshots.  
-5. Reflect on strengths and weaknesses observed across tests.  
-
----
-
-## 🧭 Reflection
-The original four-assistant architecture (Fact Checker, Bias Analyst, Propaganda Detector, Aggregator) was merged into a single refined model performing all roles simultaneously.  
-This simplified the workflow, eliminated redundancy, and improved result consistency.
+## Reflection
+This task can be done in four-assistant architecture (Fact Checker, Bias Analyst, Propaganda Detector, Aggregator) or can be merged into a single refined model performing all roles simultaneously.  
+This simplifies the workflow, eliminated redundancy, and improves result consistency.
+The platform itself doesnt offer assistant comparison, everything should be done manually.
 
 **Key learnings**
 - Prompt design has greater impact than model choice for this task.  
 - LLMs can support digital literacy and fact-checking but still need human oversight.  
-- Concealing reasoning reduces hallucination risk and keeps outputs clear.  
+- Concealing reasoning helps minimize the exposure of speculative model steps, reducing perceived hallucinations and improving clarity of the final output.  
 
 ---
 
-## 📁 Submission Checklist
+## Prompts
+[Prompts](Resources/Capstone_project/prompt.md)
 
-| Item                                      | Status             |
-| ----------------------------------------- | ------------------ |
-| Nexos project created                     | ✅                  |
-| Unified assistant prompt implemented      | ✅                  |
-| Tests with fake / real / propaganda links | ✅                  |
-| Screenshots of outputs                    | ✅                  |
-| README.md (this file)                     | ✅ Ready for upload |
+## AI's results
+[Gpt5](Resources/Capstone_project/One.json)
+
+[Claude-Opus](Resources/Capstone_project/Two.json)
+
+[Gemini 2.5 Pro](Resources/Capstone_project/Three.json)
+
+[Llama](Resources/Capstone_project/Four.json)
 
 ---
 

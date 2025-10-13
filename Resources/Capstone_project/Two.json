@@ -1,0 +1,67 @@
+{
+    "chat_name": "Two (claude-opus-4-1)",
+    "analysis_date": "2025-10-13",
+    "urls_analyzed": 5,
+    "results": [
+        {
+            "url": "https://theonion.com/limbless-slippery-rfk-jr-becoming-an-eel-is-a-sign-of-good-health/",
+            "credibility_score": 0,
+            "neutrality_score": "N/A (satire)",
+            "propaganda_score": 0,
+            "safety_score": 100,
+            "propaganda_direction": "None - satirical entertainment",
+            "negative_influence": "Does not promote war, hate, or fear.",
+            "summary": "Satirical fiction. Entertainment parody, not news.",
+            "sources_checked": "The Onion publication history and established satirical nature",
+            "warnings": "None - safe satirical website"
+        },
+        {
+            "url": "https://www.delfi.lt/saugu/ekonomika/lietuviskojo-taurus-sarvuocio-detektyvas-tesiasi-policija-pradejo-ikiteismini-tyrima-120159535",
+            "credibility_score": 85,
+            "neutrality_score": 75,
+            "propaganda_score": 10,
+            "safety_score": 100,
+            "propaganda_direction": "None detected",
+            "negative_influence": "Does not promote war, hate, or fear.",
+            "summary": "Legitimate news report on defense industry investigation.",
+            "sources_checked": "Delfi.lt publication history, Lithuanian media registry",
+            "warnings": "None - established news source"
+        },
+        {
+            "url": "https://www.15min.lt/gyvenimas/naujiena/santykiai/issiskyrusi-karina-atsikrate-tabu-nauja-meile-sutiko-svingeriu-klube-atvirai-ka-reiskia-tokie-santykiai-1024-2540832",
+            "credibility_score": 80,
+            "neutrality_score": 70,
+            "propaganda_score": 5,
+            "safety_score": 100,
+            "propaganda_direction": "None detected",
+            "negative_influence": "Does not promote war, hate, or fear.",
+            "summary": "Lifestyle article on alternative relationships. Personal story format.",
+            "sources_checked": "15min.lt publication history, Lithuanian media registry",
+            "warnings": "None - established news source"
+        },
+        {
+            "url": "https://www.foxnews.com/category/world/conflicts/ukraine",
+            "credibility_score": 65,
+            "neutrality_score": 40,
+            "propaganda_score": 55,
+            "safety_score": 100,
+            "propaganda_direction": "Conservative/right-leaning perspective on Ukraine conflict",
+            "negative_influence": "Coverage may amplify partisan divisions on foreign policy.",
+            "summary": "Mainstream but partisan source. Selective framing common.",
+            "sources_checked": "Fox News corporate structure, media bias ratings, journalism standards assessments",
+            "warnings": "None - legitimate news organization"
+        },
+        {
+            "url": "http://www.netflix-login-update.cc/verify-account/us007",
+            "credibility_score": 0,
+            "neutrality_score": "N/A",
+            "propaganda_score": "N/A",
+            "safety_score": 0,
+            "propaganda_direction": "N/A - Criminal phishing attempt",
+            "negative_influence": "Attempts to steal personal and financial information.",
+            "summary": "DANGEROUS PHISHING SITE. DO NOT VISIT.",
+            "sources_checked": "Domain registration patterns, Netflix official domains, phishing database indicators",
+            "warnings": "⚠️ MALICIOUS SITE - Fake Netflix login designed to steal credentials and payment information. Official Netflix uses netflix.com only."
+        }
+    ]
+}

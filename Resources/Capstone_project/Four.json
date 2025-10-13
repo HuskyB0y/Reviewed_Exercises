@@ -1,0 +1,40 @@
+{
+    "chat_title": "# Four (Llama)",
+    "links": [
+        {
+            "url": "https://theonion.com/limbless-slippery-rfk-jr-becoming-an-eel-is-a-sign-of-good-health/",
+            "credibility_score": 10,
+            "neutrality_score": 80,
+            "propaganda_score": 10,
+            "safety_score": 90
+        },
+        {
+            "url": "https://www.delfi.lt/saugu/ekonomika/lietuviskojo-taurus-sarvuocio-detektyvas-tesiasi-policija-pradejo-ikiteismini-tyrima-120159535",
+            "credibility_score": 80,
+            "neutrality_score": 70,
+            "propaganda_score": 20,
+            "safety_score": 90
+        },
+        {
+            "url": "https://www.15min.lt/gyvenimas/naujiena/santykiai/issiskyrusi-karina-atsikrate-tabu-nauja-meile-sutiko-svingeriu-klube-atvirai-ka-reiskia-tokie-santykiai-1024-2540832",
+            "credibility_score": 60,
+            "neutrality_score": 50,
+            "propaganda_score": 10,
+            "safety_score": 70
+        },
+        {
+            "url": "https://www.foxnews.com/category/world/conflicts/ukraine",
+            "credibility_score": 70,
+            "neutrality_score": 40,
+            "propaganda_score": 30,
+            "safety_score": 80
+        },
+        {
+            "url": "http://www.netflix-login-update.cc/verify-account/us007",
+            "credibility_score": 0,
+            "neutrality_score": 0,
+            "propaganda_score": 90,
+            "safety_score": 0
+        }
+    ]
+}
