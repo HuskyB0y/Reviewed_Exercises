@@ -5,7 +5,7 @@
 
 ## Project Overview
 This project presents a **single expert-level AI assistant** built with the **Nexos.ai** platform.  
-The assistant — **AI Media Fake News Investigator** — analyses online information to detect **fake news, bias, propaganda, and harmful narratives**, while keeping its internal reasoning to reduce hallucination risk and keep outputs clear.
+The assistant — **AI Media Fake News Investigator** — analyses online information to detect **fake news, bias, propaganda, and harmful narratives**, while concealing internal reasoning to reduce hallucination risk and improve output clarity.
 
 It evolved from an earlier multi-agent setup (Fact Checker, Bias Analyst, Propaganda Detector, Aggregator) into one refined, self-contained model.  
 The design focuses on reliable scoring, ethical operation, and concise, explainable outputs.
@@ -40,11 +40,11 @@ The design focuses on reliable scoring, ethical operation, and concise, explaina
 
 ## Methodology
 
-1. **Project setup:** Created a project in Nexos.ai platform.
-2. **Model evaluation:** Opened four separate chats within the same project, each using a different model (GPT‑5, Claude, Gemini, Llama). Each chat analyzed the same set of links using the assistant’s personality prompt.
+1. **Project setup:** Created a new project in the Nexos.ai platform.
+2. **Model evaluation:** Opened four parallel chats within the same Nexos project., each using a different model (GPT‑5, Claude, Gemini, Llama). Each chat analyzed the same set of links using the assistant’s personality prompt.
 3. **Data input:** Uploaded links to five news items representing different content types (satire, verified news, lifestyle, ideological bias, phishing).  
 4. **Result aggregation:** A fifth chat (“Aggregator Agent”) combined outputs into tables for visual and numerical comparison.  
-5. **Visualization:** Images (`onion_news.png`, `delfi.png`, `15min.png`, `fox_news.png`, `netflix.png`) were created manually or using other AI tools to represent each analyzed article.  
+5. **Visualization:** Images (`onion_news.png`, `delfi.png`, `15min.png`, `fox_news.png`, `netflix.png`) were created manually or with other AI tools to visually represent each analyzed article.  
 6. **Output documentation:** Results were compiled in Markdown format, providing consistent metrics and summaries for all evaluated links.  
 
 ---
@@ -146,10 +146,9 @@ The platform itself doesnt offer assistant comparison, everything should be done
 
 ---
 
-## Prompts
+## Supplementary Files
 [Prompts](Resources/Capstone_project/prompt.md)
 
-## AI's results
 [Gpt5](Resources/Capstone_project/One.json)
 
 [Claude-Opus](Resources/Capstone_project/Two.json)
