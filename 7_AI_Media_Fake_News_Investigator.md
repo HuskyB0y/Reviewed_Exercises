@@ -168,4 +168,4 @@ The platform itself doesnt offer assistant comparison, everything should be done
 **Author:** Sigitas Blechertas  
 **Date:** October 2025  
 **Course:** Turing College – AI Literacy Final Project  
-**Project:** AI Media Fake News Investigator (Fake News Detection System)
+**Project:** AI Media Fake News Investigator
