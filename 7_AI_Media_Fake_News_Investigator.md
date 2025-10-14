@@ -5,7 +5,7 @@
 
 ## Project Overview
 This project presents a **single expert-level AI assistant** built with the **Nexos.ai** platform.  
-The assistant — **AI Media Fake News Investigator** — analyses online information to detect **fake news, bias, propaganda, and harmful narratives**, while concealing internal reasoning to reduce hallucination risk and improve output clarity.
+The assistant - **AI Media Fake News Investigator** - analyses online information to detect **fake news, bias, propaganda, and harmful narratives**, while concealing internal reasoning to reduce hallucination risk and improve output clarity.
 
 It evolved from an earlier multi-agent setup (Fact Checker, Bias Analyst, Propaganda Detector, Aggregator) into one refined, self-contained model.  
 The design focuses on reliable scoring, ethical operation, and concise, explainable outputs.
