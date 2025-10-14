@@ -41,7 +41,7 @@ The design focuses on reliable scoring, ethical operation, and concise, explaina
 ## Methodology
 
 1. **Project setup:** Created a new project in the Nexos.ai platform.
-2. **Model evaluation:** Opened four parallel chats within the same Nexos project., each using a different model (GPT‑5, Claude, Gemini, Llama). Each chat analyzed the same set of links using the assistant’s personality prompt.
+2. **Model evaluation:** Opened four parallel chats within the same Nexos project., each using a different model (GPT‑5, Claude, Gemini, Llama). Each chat analyzed the same set of links using the assistant’s personality prompt. Project creativity was set to analytical for all chats.
 3. **Data input:** Uploaded links to five news items representing different content types (satire, verified news, lifestyle, ideological bias, phishing).  
 4. **Result aggregation:** A fifth chat (“Aggregator Agent”) combined outputs into tables for visual and numerical comparison.  
 5. **Visualization:** Images (`onion_news.png`, `delfi.png`, `15min.png`, `fox_news.png`, `netflix.png`) were created manually (real screen shots) or with other AI tools to visually represent each analyzed article.  
@@ -129,9 +129,10 @@ The design focuses on reliable scoring, ethical operation, and concise, explaina
 ## Testing Procedure
 1. Use provided promts to reprduce AI Media Fake News Investigator behaviour.
 2. Paste a text or link into Nexos for assitant created.  
-3. Wait for the assistant to generate scores and a short summary.  
-4. Compare fake vs real vs propaganda sources.  
-5. Reflect on strengths and weaknesses observed across results.  
+3. Project creativity - Analytical
+4. Wait for the assistant to generate scores and a short summary.  
+5. Compare fake vs real vs propaganda sources.  
+6. Reflect on strengths and weaknesses observed across results.  
 
 --- 
 
