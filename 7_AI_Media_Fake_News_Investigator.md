@@ -133,7 +133,7 @@ The design focuses on reliable scoring, ethical operation, and concise, explaina
 4. Compare fake vs real vs propaganda sources.  
 5. Reflect on strengths and weaknesses observed across results.  
 
----
+--- 
 
 ## Reflection
 This task can be done in four-assistant architecture (Fact Checker, Bias Analyst, Propaganda Detector, Aggregator) or can be merged into a single refined model performing all roles simultaneously.  
