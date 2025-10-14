@@ -23,18 +23,19 @@ The design focuses on reliable scoring, ethical operation, and concise, explaina
 ---
 
 ## Output Structure
+[AI results tables](Resources/Capstone_project/Agents_results/)
 
-| Field                         | Description                                                   |
-| ----------------------------- | ------------------------------------------------------------- |
-| **Credibility Score (0–100)** | Factual correctness (0 = false / fabricated, 100 = verified). |
-| **Neutrality Score (0–100)**  | Degree of balance and absence of bias.                        |
-| **Propaganda Score (0–100)**  | Presence of manipulative or ideological patterns.             |
-| **Safety Score (0–100)**      | Reliability of source and domain safety.                      |
-| **Propaganda Direction**      | If detected — which side or ideology it supports.             |
-| **Negative Influence**        | Whether the content promotes war, hate, fear, or division.    |
-| **Summary**                   | One short, neutral verdict (max ≈ 15 words).                  |
-| **Sources Checked**           | Verification references or “no data available.”               |
-| **Warnings**                  | Notes on unsafe links or unverifiable content.                |
+| Field                         | Description                                                | Mesurement                             |
+| ----------------------------- | ---------------------------------------------------------- | -------------------------------------- |
+| **Credibility Score (0–100)** | Factual correctness.                                       | 0 = false / fabricated, 100 = verified |
+| **Neutrality Score (0–100)**  | Degree of balance and absence of bias.                     | 0 = low / 100 = high                   |
+| **Propaganda Score (0–100)**  | Presence of manipulative or ideological patterns.          | 0 = low / 100 = high                   |
+| **Safety Score (0–100)**      | Reliability of source and domain safety.                   | 0 = not safe / 100 = safe              |
+| **Propaganda Direction**      | If detected — which side or ideology it supports.          | Short description                      |
+| **Negative Influence**        | Whether the content promotes war, hate, fear, or division. | Short description                      |
+| **Summary**                   | One short, neutral verdict (max ≈ 15 words).               | Short description                      |
+| **Sources Checked**           | Verification references or “no data available.”            | Short description                      |
+| **Warnings**                  | Notes on unsafe links or unverifiable content.             | Short description                      |
 
 ---
 
@@ -44,7 +45,7 @@ The design focuses on reliable scoring, ethical operation, and concise, explaina
 2. **Model evaluation:** Opened four parallel chats within the same Nexos project., each using a different model (GPT‑5, Claude, Gemini, Llama). Each chat analyzed the same set of links using the assistant’s personality prompt.
 3. **Data input:** Uploaded links to five news items representing different content types (satire, verified news, lifestyle, ideological bias, phishing).  
 4. **Result aggregation:** A fifth chat (“Aggregator Agent”) combined outputs into tables for visual and numerical comparison.  
-5. **Visualization:** Images (`onion_news.png`, `delfi.png`, `15min.png`, `fox_news.png`, `netflix.png`) were created manually or with other AI tools to visually represent each analyzed article.  
+5. **Visualization:** Images (`onion_news.png`, `delfi.png`, `15min.png`, `fox_news.png`, `netflix.png`) were created manually (real screen shots) or with other AI tools to visually represent each analyzed article.  
 6. **Output documentation:** Results were compiled in Markdown format, providing consistent metrics and summaries for all evaluated links.  
 
 ---
@@ -157,6 +158,8 @@ The platform itself doesnt offer assistant comparison, everything should be done
 [Gemini 2.5 Pro](Resources/Capstone_project/Three.json)
 
 [Llama](Resources/Capstone_project/Four.json)
+
+[News Links](Resources/Capstone_project/Links_with_news.md)
 
 ---
 
