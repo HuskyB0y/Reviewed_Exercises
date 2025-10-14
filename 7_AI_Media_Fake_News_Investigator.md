@@ -23,7 +23,6 @@ The design focuses on reliable scoring, ethical operation, and concise, explaina
 ---
 
 ## Output Structure
-[AI results tables](Resources/Capstone_project/Agents_results/)
 
 | Field                         | Description                                                | Mesurement                             |
 | ----------------------------- | ---------------------------------------------------------- | -------------------------------------- |
@@ -160,6 +159,8 @@ The platform itself doesnt offer assistant comparison, everything should be done
 [Llama](Resources/Capstone_project/Four.json)
 
 [News Links](Resources/Capstone_project/Links_with_news.md)
+
+[Full AI Results Folder](Resources/Capstone_project/Agents_results/)
 
 ---
 
