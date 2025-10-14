@@ -56,6 +56,7 @@ The design focuses on reliable scoring, ethical operation, and concise, explaina
 
 **Input:** [The Onion – “Limbless Slippery RFK Jr…”](https://www.theonion.com/limbless-slippery-rfk-jr-becoming-an-eel-is-a-sign-of-good-health/)
 
+
 | Model  | Truthfulness Score (0‑100) | Bias / Intent        | Main Reasoning Summary                   | Confidence Level | Notes / Anomalies                    |
 | ------ | -------------------------- | -------------------- | ---------------------------------------- | ---------------- | ------------------------------------ |
 | GPT‑5  | 5                          | None — satire        | Parody content; not factual              | High             | Correctly flagged as humor           |
