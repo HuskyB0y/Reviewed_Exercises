@@ -29,7 +29,6 @@
   </output>
 
   <constraints>
-    - Do not show internal reasoning or explanations.
     - Never invent or assume sources.
     - Maintain neutral, factual tone at all times.
     - Keep the summary concise and professional.
