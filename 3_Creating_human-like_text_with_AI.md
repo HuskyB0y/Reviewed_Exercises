@@ -1,4 +1,3 @@
-   # Sprint 1:
 
    ## `3. Creating human-like text with AI`
    `Note` - GPT5 model has a context of my occupation and LinkedIn profile.
