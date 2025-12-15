@@ -1,4 +1,3 @@
-   # Sprint 1:
 
    ## `1. AI hunting for LinkedIn!`
 1. Tripple benefit. Icons at the end.
