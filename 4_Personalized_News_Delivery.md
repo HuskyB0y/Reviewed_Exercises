@@ -1,4 +1,3 @@
-   # Sprint 1:
 
    ## `4. Personalized News Delivery`
 
