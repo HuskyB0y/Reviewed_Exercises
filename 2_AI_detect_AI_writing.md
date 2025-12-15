@@ -1,4 +1,3 @@
-   # Sprint 1:
 
    ## `2. let AI do the job for you! Using AI to detect AI writing`
     
