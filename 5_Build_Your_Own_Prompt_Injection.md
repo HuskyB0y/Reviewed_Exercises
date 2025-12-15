@@ -1,4 +1,3 @@
-   # Sprint 1:
 
    ## `5. Build Your Own Prompt Injection`
 
